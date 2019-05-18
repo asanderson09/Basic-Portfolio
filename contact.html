@@ -5,31 +5,40 @@
     <title>Contact Page</title>
 </head>
 <body>
-  
-   <div id="wrapper">  <!-- wrapper begin -->
-    
-    <header>  <!-- header begin -->
-        <h1 id="name">Anthony Anderson</h1>
-        <nav>
-            <a id="about" href="#">About</a>
-            <a id="portfolio" href="#">Portfolio</a>
-            <a id="contact" href="#">Contact</a>
-        </nav>
-    </header>  <!-- header end -->
-       
-        <form>
-            <header>Contact</header>
-            
-            <div>Name</div>
-            <div>Email</div>
-            <div>Message</div>
+   <div id="wrapper">  <!-- wrapper begin --> 
 
-            <button type="submit">Submit</button>
+        <header id="header">  <!-- header begin -->
+            <div id="container">
+                <h1 href="index.html" id="name">Anthony Anderson</h1>
+                <nav>
+                    <a id="about" href="index.html">About</a>
+                    <a id="portfolio" href="portfolio.html">Portfolio</a>
+                    <a id="contact" href="contact.html">Contact</a>
+                </nav>
+            </div>       
+        </header>  <!-- header end -->
+        
+        <h1>Contact</h1>
+
+        <form>
+            <label for="name">Name</label>
+            <br>
+            <input type="text" name="name" id="name" required placeholder="John Swift"> 
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" name="email" id="email" required placeholder="example@gmail.com">
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" name="message"  minlength="10" maxlength="300"  rows="10" cols="30"></textarea>
+            <br>
+            <input type="submit" value="Submit">
         </form>    
             
      </div>   <!--wrapper end-->        
     
-     <footer> Copyright &copy</footer>
+     <footer> Copyright &copy;</footer>
 
 </body>
 </html>
