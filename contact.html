@@ -7,9 +7,8 @@
 </head>
 <body>
    <div id="wrapper">  <!-- wrapper begin --> 
-
         <header id="header">  <!-- header begin -->
-            <div id="container">
+            <div class="container">
                 <a href="index.html" id="name">Anthony Anderson</a>
                 <nav>
                     <a id="about" href="index.html">About</a>
@@ -18,10 +17,12 @@
                 </nav>
             </div>       
         </header>  <!-- header end -->
-        
-        <h1>Contact</h1>
 
-        <form>
+        <br><br>
+        <section id="form" class="container">
+            <h1>Contact</h1>
+
+            <form>
             <label for="fullname">Name</label>
             <br>
             <input type="text" name="fullname" id="fullname" required placeholder="John Swift"> 
@@ -35,11 +36,14 @@
             <textarea id="message" name="message"  minlength="10" maxlength="300"  rows="10" cols="30"></textarea>
             <br>
             <input type="submit" value="Submit">
-        </form>    
-            
-     </div>   <!--wrapper end-->        
-    <br>
-     <footer> Copyright &copy;</footer>
-
+        
+            </form>    
+        </section>    
+     <!--wrapper end-->        
+         <br>
+        <footer 
+        <div class="container"> Copyright &copy;</div>
+    </footer>
+    </div>  
 </body>
 </html>
